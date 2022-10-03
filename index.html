@@ -40,6 +40,42 @@
   </section>
 </main>
 
+<section>
+  <div class="reservation-form-wrapper">
+    <div id="reservation-form"><h2>Make A Reservation</h2></div>
+  </div>
+  <form>
+    <label for="res-date"></label>
+    <input
+      type="date"
+      name="res-date"
+      id="res-date"
+      placeholder="current date"
+      required
+    />
+    <label for="res-time"></label>
+    <input
+      type="time"
+      name="res-time"
+      id="res-time"
+      placeholder="current time"
+      required
+    />
+    <label for="res-party-size"></label>
+    <input
+      type="number"
+      min="1"
+      max="9"
+      name="res-party-size"
+      id="res-party-size"
+      placeholder=0
+      required
+    />
+    <button type="button" id="reservation-submit-btn" class="submit-butn" disabled="disabled">
+      Find a Table
+    </button>
+  </form>
+</section>
 
 
 </body>
