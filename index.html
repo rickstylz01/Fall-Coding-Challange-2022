@@ -41,11 +41,12 @@
 </main>
 
 <section class="reservation-form-container">
-  <div id="reservation-info-form" class="reservation-form-wrapper">
+  <div id="reservation-info-form" class="reservation-form-wrapper" aria-labelledby="reservation-form-label">
     <div id="reservation-form-label"><h2>Make A Reservation</h2></div>
-    <form id="reservation-form" >
+    <form id="reservation-form" aria-label="reservation form" method="post" autocomplete="off">
       <label for="res-date"></label>
       <input
+        aria-label="reservation date"
         type="date"
         name="res-date"
         id="res-date"
@@ -54,6 +55,7 @@
       />
       <label for="res-time"></label>
       <input
+        aria-label="reservation time"
         type="time"
         name="res-time"
         id="res-time"
@@ -62,6 +64,7 @@
       />
       <label for="res-party-size"></label>
       <input
+        aria-label="party size"
         type="number"
         min="1"
         max="9"
@@ -70,19 +73,20 @@
         placeholder=0
         required
       />
-      <button type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled">
+      <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled">
         Find a Table
       </button>
     </form>
   </div>
 
   <!-- Customer Info Form-->
-  <div id="customer-info-form" class="customer-info-form-container hidden" >
+  <div id="customer-info-form" class="customer-info-form-container hidden" aria-labelledby="customer-info-label">
     <div class="customer-info-form-wrapper">
       <div id="customer-info-label"><h2>Complete your reservation</h2></div>
       <form id="customer-form" method="post" autocomplete="off">
         <label for="firstName"></label>
         <input
+          aria-label="your first name"
           type="text"
           name="firstName"
           minlength="2"
@@ -92,6 +96,7 @@
         >
         <label for="lastName"></label>
         <input
+          aria-label="your last name"
           type="text"
           name="lastName"
           minlength="2"
@@ -101,6 +106,7 @@
         >
         <label for="phone"></label>
         <input
+          aria-label="your phone number"
           type="number"
           name="phone"
           id="phone"
@@ -109,13 +115,14 @@
         >
         <label for="email"></label>
         <input
+          aria-label="your email"
           type="email"
           name="email"
           id="email"
           placeholder="Email"
           required
         >
-        <button type="button" id="complete-res-btn" class="submit-btn" disabled="disabled">
+        <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn" disabled="disabled">
           Complete reservation
         </button>
       </form>
