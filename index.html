@@ -98,6 +98,7 @@
           minlength="2"
           id="firstName"
           placeholder="First name"
+          onkeyup="validateForm('customer-form', 'complete-res-btn')"
           required
         >
         <label for="lastName"></label>
@@ -108,6 +109,7 @@
           minlength="2"
           id="lastName"
           placeholder="Last name"
+          onkeyup="validateForm('customer-form', 'complete-res-btn')"
           required
         >
         <label for="phone"></label>
@@ -117,6 +119,7 @@
           name="phone"
           id="phone"
           placeholder="Phone number"
+          onkeyup="validateForm('customer-form', 'complete-res-btn')"
           required
         >
         <label for="email"></label>
@@ -126,9 +129,10 @@
           name="email"
           id="email"
           placeholder="Email"
+          onkeyup="validateForm('customer-form', 'complete-res-btn')"
           required
         >
-        <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn" disabled="disabled">
+        <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn" disabled="disabled" onclick="showNext('customer-info-form', 'success-msg')">
           Complete reservation
         </button>
       </form>
