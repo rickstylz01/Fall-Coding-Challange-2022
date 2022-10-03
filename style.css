@@ -116,7 +116,11 @@
   }
 
   footer a {
-    text-decoration: none;
+    text-decoration: none; /*make text-decoration: none it's own class*/
+  }
+
+  .aba-information {
+    display: flex; /*make display: flex it's own class*/
   }
 
   .aba-information-container {
