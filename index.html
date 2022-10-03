@@ -40,7 +40,95 @@
   </section>
 </main>
 
+<section class="reservation-form-container">
+  <div id="reservation-info-form" class="reservation-form-wrapper">
+    <div id="reservation-form-label"><h2>Make A Reservation</h2></div>
+    <form id="reservation-form" >
+      <label for="res-date"></label>
+      <input
+        type="date"
+        name="res-date"
+        id="res-date"
+        placeholder="current date"
+        required
+      />
+      <label for="res-time"></label>
+      <input
+        type="time"
+        name="res-time"
+        id="res-time"
+        placeholder="current time"
+        required
+      />
+      <label for="res-party-size"></label>
+      <input
+        type="number"
+        min="1"
+        max="9"
+        name="res-party-size"
+        id="res-party-size"
+        placeholder=0
+        required
+      />
+      <button type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled">
+        Find a Table
+      </button>
+    </form>
+  </div>
 
+  <!-- Customer Info Form-->
+  <div id="customer-info-form" class="customer-info-form-container hidden" >
+    <div class="customer-info-form-wrapper">
+      <div id="customer-info-label"><h2>Complete your reservation</h2></div>
+      <form id="customer-form" method="post" autocomplete="off">
+        <label for="firstName"></label>
+        <input
+          type="text"
+          name="firstName"
+          minlength="2"
+          id="firstName"
+          placeholder="First name"
+          required
+        >
+        <label for="lastName"></label>
+        <input
+          type="text"
+          name="lastName"
+          minlength="2"
+          id="lastName"
+          placeholder="Last name"
+          required
+        >
+        <label for="phone"></label>
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          placeholder="Phone number"
+          required
+        >
+        <label for="email"></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+          required
+        >
+        <button type="button" id="complete-res-btn" class="submit-btn" disabled="disabled">
+          Complete reservation
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Success Message-->
+  <div id="success-msg" class="success-msg-container hidden">
+    <div class="success-msg-wrapper">
+      <h2>Success! Your reservation was completed.</h2>
+    </div>
+  </div>
+</section>
 
 </body>
 </html>
