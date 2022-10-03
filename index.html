@@ -41,172 +41,221 @@
       <img src="./images/food.jpg" alt="Create alt text">
     </div>
   </section>
-</main>
 
-<section class="reservation-form-container">
-  <div id="reservation-info-form" class="reservation-form-wrapper" aria-labelledby="reservation-form-label">
-    <div id="reservation-form-label"><h2>Make A Reservation</h2></div>
-    <form id="reservation-form" aria-label="reservation form" method="post" autocomplete="off">
-      <label for="res-date"></label>
-      <input
-        aria-label="reservation date"
-        type="date"
-        name="res-date"
-        id="res-date"
-        placeholder="current date"
-        onclick="validateForm('reservation-form', 'reservation-submit-btn')"
-        required
-      />
-      <label for="res-time"></label>
-      <input
-        aria-label="reservation time"
-        type="time"
-        name="res-time"
-        id="res-time"
-        placeholder="current time"
-        onclick="validateForm('reservation-form', 'reservation-submit-btn')"
-        required
-      />
-      <label for="res-party-size"></label>
-      <input
-        aria-label="party size"
-        type="number"
-        min="1"
-        max="9"
-        name="res-party-size"
-        id="res-party-size"
-        placeholder=0
-        onkeyup="validateForm('reservation-form', 'reservation-submit-btn')"
-        required
-      />
-      <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled"
-              onclick="showNext('reservation-info-form', 'customer-info-form')">
-        Find a Table
-      </button>
-    </form>
-  </div>
-
-  <!-- Customer Info Form-->
-  <div id="customer-info-form" class="customer-info-form-container hidden" aria-labelledby="customer-info-label">
-    <div class="customer-info-form-wrapper">
-      <div id="customer-info-label"><h2>Complete your reservation</h2></div>
-      <form id="customer-form" method="post" autocomplete="off">
-        <label for="firstName"></label>
+  <section class="reservation-form-container">
+    <div id="reservation-info-form" class="reservation-form-wrapper" aria-labelledby="reservation-form-label">
+      <div id="reservation-form-label"><h2>Make A Reservation</h2></div>
+      <form id="reservation-form" aria-label="reservation form" method="post" autocomplete="off">
+        <label for="res-date"></label>
         <input
-          aria-label="your first name"
-          type="text"
-          name="firstName"
-          minlength="2"
-          id="firstName"
-          placeholder="First name"
-          onkeyup="validateForm('customer-form', 'complete-res-btn')"
+          aria-label="reservation date"
+          type="date"
+          name="res-date"
+          id="res-date"
+          placeholder="current date"
+          onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
-        >
-        <label for="lastName"></label>
+        />
+        <label for="res-time"></label>
         <input
-          aria-label="your last name"
-          type="text"
-          name="lastName"
-          minlength="2"
-          id="lastName"
-          placeholder="Last name"
-          onkeyup="validateForm('customer-form', 'complete-res-btn')"
+          aria-label="reservation time"
+          type="time"
+          name="res-time"
+          id="res-time"
+          placeholder="current time"
+          onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
-        >
-        <label for="phone"></label>
+        />
+        <label for="res-party-size"></label>
         <input
-          aria-label="your phone number"
+          aria-label="party size"
           type="number"
-          name="phone"
-          id="phone"
-          placeholder="Phone number"
-          onkeyup="validateForm('customer-form', 'complete-res-btn')"
+          min="1"
+          max="9"
+          name="res-party-size"
+          id="res-party-size"
+          placeholder=0
+          onkeyup="validateForm('reservation-form', 'reservation-submit-btn')"
           required
-        >
-        <label for="email"></label>
-        <input
-          aria-label="your email"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Email"
-          onkeyup="validateForm('customer-form', 'complete-res-btn')"
-          required
-        >
-        <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn" disabled="disabled"
-                onclick="showNext('customer-info-form', 'success-msg')">
-          Complete reservation
+        />
+        <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled"
+                onclick="showNext('reservation-info-form', 'customer-info-form')">
+          Find a Table
         </button>
       </form>
     </div>
-  </div>
 
-  <!-- Success Message-->
-  <div id="success-msg" class="success-msg-container hidden">
-    <div class="success-msg-wrapper">
-      <h2>Success! Your reservation was completed.</h2>
+    <!-- Customer Info Form-->
+    <div id="customer-info-form" class="customer-info-form-container hidden" aria-labelledby="customer-info-label">
+      <div class="customer-info-form-wrapper">
+        <div id="customer-info-label"><h2>Complete your reservation</h2></div>
+        <form id="customer-form" method="post" autocomplete="off">
+          <label for="firstName"></label>
+          <input
+            aria-label="your first name"
+            type="text"
+            name="firstName"
+            minlength="2"
+            id="firstName"
+            placeholder="First name"
+            onkeyup="validateForm('customer-form', 'complete-res-btn')"
+            required
+          >
+          <label for="lastName"></label>
+          <input
+            aria-label="your last name"
+            type="text"
+            name="lastName"
+            minlength="2"
+            id="lastName"
+            placeholder="Last name"
+            onkeyup="validateForm('customer-form', 'complete-res-btn')"
+            required
+          >
+          <label for="phone"></label>
+          <input
+            aria-label="your phone number"
+            type="number"
+            name="phone"
+            id="phone"
+            placeholder="Phone number"
+            onkeyup="validateForm('customer-form', 'complete-res-btn')"
+            required
+          >
+          <label for="email"></label>
+          <input
+            aria-label="your email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            onkeyup="validateForm('customer-form', 'complete-res-btn')"
+            required
+          >
+          <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn" disabled="disabled"
+                  onclick="showNext('customer-info-form', 'success-msg')">
+            Complete reservation
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
-</section>
 
-<section class="dining-at-abba-section-container">
-  <!--Group Dining-->
-  <div id="group-dining" class="group-dining-container" aria-label="dining at aba">
-    <div class="aba-dining-dish">
-      <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
+    <!-- Success Message-->
+    <div id="success-msg" class="success-msg-container hidden">
+      <div class="success-msg-wrapper">
+        <h2>Success! Your reservation was completed.</h2>
+      </div>
     </div>
-    <article class="description-wrapper">
-      <h2 class="article-label">Group Dining At Aba</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-      </p>
-    </article>
-    <button>Plan Your Party</button>
-  </div>
-  <!--Wine Dinner-->
-  <div class="wine-dinner-container">
-    <div class="aba-dining-dish-close">
-      <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
-    </div>
-    <article class="description-wrapper">
-      <h2 class="article-label">Wine Dinner</h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-        est laborum.
-      </p>
-    </article>
-    <div class="date-time">
-      <p>
-        <time datetime="2018-06-13T19:00:00">June 13th, 2018 at 7pm</time>
-      </p>
-    </div>
-    <button class="learn-more">Learn More</button>
-  </div>
-  <!--About Aba-->
-  <div class="about-aba-container">
-    <div class="aba-dining-dish">
-      <img src="./images/up-42.jpg" alt="Create alt text">
-    </div>
-    <article class="description-wrapper">
-      <h2 class="article-label">About Aba</h2>
-      <p>
-        Aba is a restaurant with a rooftop patio located in Chicago's historic Fulton Market District. This is Chef CJ
-        Jacobson's second restaurant with Lettuce Entertain You, and is an extension of Ēma (mother in Hebrew) in
-        River North. Aba, meaning father in Hebrew, will incorporate Ēma's style of cooking with a larger influence of
-        steak, raw and chilled seafood. The beverage program is crafted by Wine Director Ryan Arnold and Mixologist
-        Liz Pearce and showcases Mediterranean-inspired rare wines and spirits.
-      </p>
-    </article>
-  </div>
-</section>
+  </section>
 
+  <section class="dining-at-abba-section-container">
+    <!--Group Dining-->
+    <div id="group-dining" class="group-dining-container" aria-label="dining at aba">
+      <div class="aba-dining-dish">
+        <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
+      </div>
+      <article class="description-wrapper">
+        <h2 class="article-label">Group Dining At Aba</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+      </article>
+      <button>Plan Your Party</button>
+    </div>
+    <!--Wine Dinner-->
+    <div class="wine-dinner-container">
+      <div class="aba-dining-dish-close">
+        <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
+      </div>
+      <article class="description-wrapper">
+        <h2 class="article-label">Wine Dinner</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.
+        </p>
+      </article>
+      <div class="date-time">
+        <p>
+          <time datetime="2018-06-13T19:00:00">June 13th, 2018 at 7pm</time>
+        </p>
+      </div>
+      <button class="learn-more">Learn More</button>
+    </div>
+    <!--About Aba-->
+    <div class="about-aba-container">
+      <div class="aba-dining-dish">
+        <img src="./images/up-42.jpg" alt="Create alt text">
+      </div>
+      <article class="description-wrapper">
+        <h2 class="article-label">About Aba</h2>
+        <p>
+          Aba is a restaurant with a rooftop patio located in Chicago's historic Fulton Market District. This is Chef CJ
+          Jacobson's second restaurant with Lettuce Entertain You, and is an extension of Ēma (mother in Hebrew) in
+          River North. Aba, meaning father in Hebrew, will incorporate Ēma's style of cooking with a larger influence of
+          steak, raw and chilled seafood. The beverage program is crafted by Wine Director Ryan Arnold and Mixologist
+          Liz Pearce and showcases Mediterranean-inspired rare wines and spirits.
+        </p>
+      </article>
+    </div>
+  </section>
+</main>
 
+<footer>
+  <section aria-label="aba contact information" class="aba-information">
+    <div class="aba-information-container">
+      <article class="location-info-wrapper">
+        <h3 class="location-info-label">Locations</h3>
+        <a data-action="click on address" data-label="chicago" data-category="footer" class="store address"
+           href="https://goo.gl/maps/yBnG7NBsnx4ns9vp7" target="_blank">
+          302 N Green Street,
+          <br>
+          3rd Floor
+          <br>
+          Chicago, IL 60607
+        </a>
+        <br>
+        <br>
+        <a aria-label="aba phone number" data-action="click to call" data-label="chicago" data-category="footer"
+           class="tracked phone-link" href="tel:773-645-1400">
+          773-645-1400
+        </a>
+      </article>
+      <article aria-label="hours of operation" class="hours-of-operation-wrapper">
+        <h3 class="hours-of-operation-label">Hours</h3>
+        <p>
+          Tues - Thurs 12pm - 10pm
+          <br>
+          Fri 12pm - 1am
+          <br>
+          Sat 11am - 1am
+          <br>
+          Sun 10am - 9pm
+        </p>
+      </article>
+      <div class="contact-links-wrapper">
+        <h3><a href="#">Contact</a></h3>
+        <h3><a href="#">Newsletter</a></h3>
+      </div>
+    </div>
+    <div class="legal-wrapper">
+      <ul>
+        <li><a href="#">Frequent Diner</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Employment</a></li>
+        <li aria-label="lettuce entertain you enterprises web address"><a href="https://www.lettuce.com/"
+                                                                          target="_blank">Leye.com</a></li>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+  </section>
+</footer>
 </body>
 </html>
