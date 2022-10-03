@@ -1,11 +1,23 @@
 body {
   background-image: url("./images/white-wood.jpeg");
+  padding: 0 1rem 0 1rem;
 }
 
+/*--Header--*/
 .header-container {
   display: inline-flex;
   border: 1px solid red;
   width: 100%;
+}
+
+.nav-content-container {
+  border-top: solid 0.0625rem black;
+  border-bottom: solid 0.0625rem black;
+}
+
+.nav-content-container a{
+  font-family: Playfair, SansSerif;
+  text-decoration: none;
 }
 
 .logo-wrapper {
@@ -26,6 +38,56 @@ body {
 .hidden {
   display: none;
 }
+
+
+/*--Hero--*/
+.hero-images-container {
+  border: 1px solid brown;
+  display: inline-flex;
+  height: 51.125rem;
+}
+
+.hero-images-container img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.image-wrapper-one {
+  width: 50%;
+  margin-right: 1.44rem;
+}
+
+.image-wrapper-one img {
+  height: 100%;
+}
+
+.image-wrapper-two {
+  border: 1px solid green;
+  width: 50%;
+}
+
+image-wrapper-two img {
+  height: 100%;
+}
+
+/*--Reservation Form--*/
+.reservation-form-container {
+  border: 1px solid orange;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.8rem;
+}
+
+/*--Dinig at Aba--*/
+.dining-at-aba-section-container {
+  border: 1px solid purple;
+  margin-top: 6.875rem;
+}
+
+
+
+
+
 
 /* Party size input field */
 /* Chrome */
