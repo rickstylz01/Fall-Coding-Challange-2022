@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+          integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="index.js"></script>
   <title>Aba Home Page</title>
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./images/Aba-Logo.png">
 </head>
+
 <body>
 <header class="header-container">
   <div class="logo-wrapper">
@@ -51,6 +54,7 @@
         name="res-date"
         id="res-date"
         placeholder="current date"
+        onclick="validateForm('reservation-form', 'reservation-submit-btn')"
         required
       />
       <label for="res-time"></label>
@@ -60,6 +64,7 @@
         name="res-time"
         id="res-time"
         placeholder="current time"
+        onclick="validateForm('reservation-form', 'reservation-submit-btn')"
         required
       />
       <label for="res-party-size"></label>
@@ -71,9 +76,10 @@
         name="res-party-size"
         id="res-party-size"
         placeholder=0
+        onkeyup="validateForm('reservation-form', 'reservation-submit-btn')"
         required
       />
-      <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled">
+      <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled" onclick="showNext('reservation-info-form', 'customer-info-form')">
         Find a Table
       </button>
     </form>
