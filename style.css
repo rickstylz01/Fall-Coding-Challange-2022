@@ -146,9 +146,13 @@
     font-family: 'Playfair Display', sans-serif;
   }
 
-  .hours-of-operation-wrapper p,
-  .location-info-wrapper p {
+  .hours-of-operation-wrapper p {
     margin-top: 0;
+    font-family: 'Montserrat', serif;
+  }
+
+  .location-info-wrapper a {
+    font-family: 'Montserrat', serif;
   }
 
   .legal-wrapper {
