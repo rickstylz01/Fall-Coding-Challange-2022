@@ -127,11 +127,13 @@
     justify-content: flex-end;/*make display: flex it's own class*/
     margin-bottom: auto;
     margin-right: 10.375rem;
+    margin-top: 4.25rem;
   }
 
   .aba-information-container {
     display: flex;
     float: right;
+    justify-content: space-between;
   }
 
   .legal-wrapper {
@@ -140,6 +142,30 @@
     padding-left: 8.375rem;
     padding-right: 8.375rem;
     margin-bottom: 1.5rem;
+  }
+
+  .hours-of-operation-wrapper {
+    margin-right: 6.75rem; /*make combo class for sibling div*/
+  }
+
+  .hours-of-operation-wrapper h3 {
+    margin-bottom: 0; /*make combo class for sibling div*/
+  }
+
+  .hours-of-operation-wrapper p {
+    margin-top: 0; /*make combo class for sibling div*/
+  }
+
+  .hours-of-operation-wrapper {
+    margin-right: 6.75rem; /*make combo class for sibling div*/
+  }
+
+  .location-info-wrapper h3 {
+    margin-bottom: 0; /*make combo class for sibling div*/
+  }
+
+  .location-info-wrapper p {
+    margin-top: 0; /*make combo class for sibling div*/
   }
 }
 
