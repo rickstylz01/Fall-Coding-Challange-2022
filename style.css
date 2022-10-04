@@ -305,10 +305,9 @@ input[type="number"] {
     border-bottom: 1px solid black;
   }
 
-  .res-nav-link {
-    padding-right: 8px;
+  .pad-left {
+    padding-left: 2.125rem;
   }
-
 
   /*--responsive navbar--*/
   .nav-menu a {
@@ -346,5 +345,9 @@ input[type="number"] {
     text-align: center;
     padding: 1.125rem 0;
   }
+
+
+  /*--Hero Section--*/
+
 
 }
