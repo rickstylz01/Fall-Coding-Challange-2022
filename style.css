@@ -133,6 +133,13 @@
     float: right;
   }
 
+  .legal-wrapper {
+    display: flex; /*make into it's own css class*/
+    justify-content: space-around;
+    padding-left: 8.375rem;
+    padding-right: 8.375rem;
+    margin-bottom: 1.5rem;
+  }
 }
 
 
