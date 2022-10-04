@@ -20,3 +20,12 @@ function showNext(elOne, elTwo) {
   $(elementOneId).hide("slow");
   $(elementTwoId).show("slow");
 }
+
+function toggleResponseClass() {
+  let menu = document.getElementById('nav-menu');
+  if (menu.className === 'nav-menu') {
+    menu.className += ' responsive';
+  } else {
+    menu.className = 'nav-menu';
+  }
+}
