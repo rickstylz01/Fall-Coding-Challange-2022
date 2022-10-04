@@ -48,7 +48,7 @@
 
 <!--  Reservation forms-->
   <section class="reservation-form-container">
-    <div id="reservation-info-form" class="reservation-form-wrapper hidden" aria-labelledby="reservation-form-label">
+    <div id="reservation-info-form" class="reservation-form-wrapper" aria-labelledby="reservation-form-label">
       <div id="reservation-form-label"><h2 class="label-style">Make A Reservation</h2></div>
       <form id="reservation-form" aria-label="reservation form" method="post" autocomplete="off">
         <label for="res-date"></label>
@@ -57,7 +57,7 @@
           type="date"
           name="res-date"
           id="res-date"
-          class="input-lengthen"
+          class="input-style"
           placeholder="current date"
           onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -68,7 +68,7 @@
           type="time"
           name="res-time"
           id="res-time"
-          class="input-lengthen"
+          class="input-style"
           placeholder="current time"
           onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -81,7 +81,7 @@
           max="9"
           name="res-party-size"
           id="res-party-size"
-          class="input-lengthen"
+          class="input-style"
           placeholder=0
           onkeyup="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -94,7 +94,7 @@
     </div>
 
     <!-- Customer Info Form-->
-    <div id="customer-info-form" class="customer-info-form-container " aria-labelledby="customer-info-label">
+    <div id="customer-info-form" class="customer-info-form-container hidden" aria-labelledby="customer-info-label">
       <div class="customer-info-form-wrapper">
         <div id="customer-info-label"><h2 class="label-style">Complete your reservation</h2></div>
         <form id="customer-form" method="post" autocomplete="off">
@@ -105,7 +105,7 @@
             name="firstName"
             minlength="2"
             id="firstName"
-            class="input-lengthen"
+            class="input-style"
             placeholder="First name"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -117,7 +117,7 @@
             name="lastName"
             minlength="2"
             id="lastName"
-            class="input-lengthen"
+            class="input-style"
             placeholder="Last name"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -128,7 +128,7 @@
             type="number"
             name="phone"
             id="phone"
-            class="input-lengthen"
+            class="input-style"
             placeholder="Phone number"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -139,16 +139,15 @@
             type="email"
             name="email"
             id="email"
-            class="input-lengthen"
+            class="input-style"
             placeholder="Email"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
           >
-          <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn button-style" disabled="disabled"
-                  onclick="showNext('customer-info-form', 'success-msg')">
-            Complete reservation
-          </button>
         </form>
+        <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn button-style" disabled="disabled" onclick="showNext('customer-info-form', 'success-msg')">
+          Complete reservation
+        </button>
       </div>
     </div>
 
@@ -166,9 +165,9 @@
       <div class="aba-dining-dish-wrapper">
         <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
-      <article class="description-wrapper">
+      <article class="description-wrapper experiment-padding">
         <h2 class="label-style">Group Dining At Aba</h2>
-        <p>
+        <p class="font-style-mont">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -181,11 +180,11 @@
     <!--Wine Dinner-->
     <div class="dining-content-container">
       <div class="aba-dining-dish-wrapper">
-        <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
+        <img src="./images/up-35-close.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
-      <article class="description-wrapper">
+      <article class="description-wrapper experiment-padding">
         <h2 class="label-style">Wine Dinner</h2>
-        <p>
+        <p class="font-style-mont">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -193,7 +192,7 @@
           est laborum.
         </p>
         <div class="date-time">
-          <p>
+          <p class="font-style-mont">
             <time datetime="2018-06-13T19:00:00">June 13th, 2018 at 7pm</time>
           </p>
         </div>
@@ -205,9 +204,9 @@
       <div class="aba-dining-dish-wrapper">
         <img src="./images/up-42.jpg" alt="Create alt text">
       </div>
-      <article class="description-wrapper">
+      <article class="description-wrapper experiment-padding">
         <h2 class="label-style">About Aba</h2>
-        <p>
+        <p class="font-style-mont">
           Aba is a restaurant with a rooftop patio located in Chicago's historic Fulton Market District. This is Chef CJ
           Jacobson's second restaurant with Lettuce Entertain You, and is an extension of Ēma (mother in Hebrew) in
           River North. Aba, meaning father in Hebrew, will incorporate Ēma's style of cooking with a larger influence of

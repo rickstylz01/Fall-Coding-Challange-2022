@@ -3,10 +3,15 @@
   text-transform: uppercase;
 }
 
-.input-lengthen {
+.input-style {
   width: 18.58rem;
   height: 1.75rem;
   text-align: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.font-style-mont {
+  font-family: Montserrat, sans-serif;
 }
 
 /*--Desktops--*/
@@ -18,7 +23,7 @@
   /*--Header--*/
   main,
   .header-container {
-    padding: 0 1rem 0 1rem;
+    padding: 0 4rem;
   }
 
   .header-container {
@@ -108,11 +113,20 @@
     padding: 2.375rem 0;
   }
 
-  #reservation-form {
+  #reservation-form,
+  #customer-form {
     font-size: 0;
   }
 
+  #complete-res-btn {
+    margin-top: 1.5rem;
+  }
+
   /*--Dining at Aba--*/
+  .experiment-padding {
+    padding: 1.375rem 5.875rem;
+  }
+
   .dining-at-aba-section-container {
     margin-top: 6.875rem;
   }
@@ -128,7 +142,6 @@
   }
 
   .description-wrapper {
-    padding-top: 2.375rem;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-align: center;
