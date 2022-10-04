@@ -140,19 +140,33 @@
     margin-right: 6.75rem; /*make combo class for sibling div*/
   }
 
-  .hours-of-operation-wrapper h3,
-  .location-info-wrapper h3 {
+  .hours-of-operation-wrapper h4,
+  .location-info-wrapper h4 {
     margin-bottom: 0;
-    font-family: 'Playfair Display', sans-serif;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 0.125rem;
   }
 
   .hours-of-operation-wrapper p {
     margin-top: 0;
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .contact-links-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-links-wrapper a {
+    font-weight: bold;
+  }
+
+  .newsletter-label {
+    margin-top: 0.625rem;
   }
 
   .location-info-wrapper a {
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .legal-wrapper {
