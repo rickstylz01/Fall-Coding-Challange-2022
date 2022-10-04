@@ -90,6 +90,7 @@
     border: 1px solid orange;
     display: flex;
     justify-content: center;
+    text-align: center;
     margin-top: 4.8rem;
   }
 
@@ -162,8 +163,7 @@
     color: white;
     display: flex;
     flex-direction: column;
-    /*justify-content: flex-end;*/
-  }
+    margin-top: 6.875rem  }
 
   footer a {
     text-decoration: none; /*make text-decoration: none it's own class*/
