@@ -11,10 +11,14 @@
   }
 
   /*--Header--*/
+  main,
+  .header-container {
+    padding: 0 1rem 0 1rem;
+  }
+
   .header-container {
     display: flex;
     justify-content: center;
-    padding: 0 1rem 0 1rem;
     margin-top: 3.375rem;
   }
 
@@ -51,14 +55,11 @@
     align-items: center;
     border-top: solid 1px black;
     border-bottom: solid 1px black;
+    letter-spacing: 0.125rem;
   }
 
   .nav-menu a {
     color: black;
-  }
-
-  main {
-    padding: 0 1rem 0 1rem; /*combo - header container*/
   }
 
   /*--Hero--*/
