@@ -40,6 +40,23 @@ footer,
   border-bottom: 1px solid black;
 }
 
+/* Party size input field */
+/* Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.hidden {
+  display: none;
+}
+
 /*--Desktops--*/
 @media only screen and (min-width: 1440px) {
   body {
@@ -75,12 +92,13 @@ footer,
     text-decoration: none;
   }
 
-  .nav-menu {
+  .nav-menu {               /*topnav*/
     height: 3.125rem;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
     letter-spacing: 0.125rem;
+    overflow: hidden;
   }
 
   .nav-menu a {
@@ -248,20 +266,32 @@ footer,
   }
 }
 
+@media only screen and (max-width: 600px) {
+  .nav-menu a:not(:first-child) {
+    display: none;
+  }
 
-/* Party size input field */
-/* Chrome */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+  .nav-menu a.icon {
+    float: right;
+    display: block;
+  }
+
 }
 
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
+@media only screen and (max-width: 600px) {
+  .nav-menu.responsive {
+    position: relative;
+  }
 
-.hidden {
-  display: none;
+  .nav-menu.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left; /*maybe center*/
+  }
 }
