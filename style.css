@@ -25,7 +25,9 @@
 .about-aba-container,
 footer,
 .aba-information-container,
-.contact-links-wrapper {
+.contact-links-wrapper,
+#reservation-form,
+#reservation-form-label {
   display: flex;
 }
 
@@ -276,12 +278,20 @@ input[type="number"] {
   footer,
   .header-container,
   .dining-content-container,
-  .legal-wrapper {
+  .legal-wrapper,
+  #reservation-form {
     flex-direction: column;
   }
 
-  .header-container {
+  .header-container,
+  .nav-content-container,
+  .nav-menu,
+  .reservation-form-container,
+  #reservation-form-label {
     justify-content: center;
+  }
+
+  .header-container {
     align-items: center;
   }
 
@@ -291,7 +301,6 @@ input[type="number"] {
   }
 
   .nav-content-container {
-    justify-content: center;
     padding: 2rem 0;
     width: 100%;
   }
@@ -299,7 +308,6 @@ input[type="number"] {
   .nav-menu {
     width: 100%;
     height: 2.75rem;
-    justify-content: center;
     align-items: center;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
@@ -348,6 +356,21 @@ input[type="number"] {
 
 
   /*--Hero Section--*/
+  .image-wrapper-one {
+    display: none;
+  }
 
+  /*--Form Section--*/
+  .reservation-form-container {
+    padding: 18px 0;
+  }
 
+  #reservation-form {
+    height: 15rem;
+  }
+
+  .input-style {
+    margin-bottom: 1.75rem;
+
+  }
 }
