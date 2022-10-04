@@ -95,19 +95,42 @@
 
   /*--Dinig at Aba--*/
   .dining-at-aba-section-container {
-    border: 1px solid purple;
     margin-top: 6.875rem;
   }
 
+  .article-label {
+    font-family: 'Playfair Display', serif;
+  }
+
   .group-dining-container {
-    border: 1px solid yellow;
+    border: 1px solid purple;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
   }
 
   .description-wrapper {
-    justify-content: center;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    height: 21.125rem;
   }
+
+  .aba-dining-dish-wrapper {
+    border: 1px solid brown;
+    height: 29.875rem;
+    width: 78.875rem;
+  }
+
+  .aba-dining-dish-wrapper img { /*add to other img wrapper class*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /*.description-wrapper {*/
+  /*  justify-content: center;*/
+  /*}*/
 
   /*--Wine Dinner--*/
   .wine-dinner-container {
