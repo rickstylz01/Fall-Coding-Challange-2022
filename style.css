@@ -109,18 +109,23 @@
 
   footer {
     background-image: url("./images/Aba-wood-1.jpg");
-    background-repeat: no-repeat;
     height: 31.8rem;
     width: 100%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: flex-end;*/
   }
 
   footer a {
     text-decoration: none; /*make text-decoration: none it's own class*/
+    color: white;
   }
 
   .aba-information {
-    display: flex; /*make display: flex it's own class*/
+    display: flex;
+    justify-content: flex-end;/*make display: flex it's own class*/
+    margin-bottom: auto;
   }
 
   .aba-information-container {
