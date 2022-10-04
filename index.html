@@ -7,10 +7,10 @@
   <script src="https://code.jquery.com/jquery-3.6.1.min.js"
           integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="index.js"></script>
-  <title>Aba Home Page</title>
+  <title>Aba Restaurants</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Playfair&family=Montserrat">
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat">
   <link rel="icon" href="./images/Aba-Logo.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,19 +18,21 @@
 <body>
 <header class="header-container">
   <div class="logo-wrapper">
-    <img src="./images/Aba-Logo.png" alt="Aba restaurant logo">
+    <a href="#"><img src="./images/Aba-Logo.png" alt="Aba restaurant logo"></a>
   </div>
 
   <!--    Navigation-->
   <nav id="myTopNav" class="nav-content-container">
-    <a href="#reservation-info-form">RESERVE</a>
-    <a href="#">MENU</a>
-    <a href="#">GROUP DINING</a>
-    <a href="#">EVENTS</a>
-    <a href="#">TEAM</a>
-    <a href="javascript:void(0);" class="icon">
-      <i class="fa fa-bars"></i>
-    </a>
+    <div class="nav-menu">
+      <a href="#reservation-info-form">RESERVE</a>
+      <a href="#">MENU</a>
+      <a href="#">GROUP DINING</a>
+      <a href="#">EVENTS</a>
+      <a href="#">TEAM</a>
+      <a href="javascript:void(0);" class="icon hidden">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
   </nav>
 </header>
 
@@ -44,9 +46,10 @@
     </div>
   </section>
 
+<!--  Reservation forms-->
   <section class="reservation-form-container">
     <div id="reservation-info-form" class="reservation-form-wrapper" aria-labelledby="reservation-form-label">
-      <div id="reservation-form-label"><h2>Make A Reservation</h2></div>
+      <div id="reservation-form-label"><h2 class="label-style">Make A Reservation</h2></div>
       <form id="reservation-form" aria-label="reservation form" method="post" autocomplete="off">
         <label for="res-date"></label>
         <input
@@ -54,6 +57,7 @@
           type="date"
           name="res-date"
           id="res-date"
+          class="input-style"
           placeholder="current date"
           onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -64,6 +68,7 @@
           type="time"
           name="res-time"
           id="res-time"
+          class="input-style"
           placeholder="current time"
           onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -76,11 +81,12 @@
           max="9"
           name="res-party-size"
           id="res-party-size"
+          class="input-style"
           placeholder=0
           onkeyup="validateForm('reservation-form', 'reservation-submit-btn')"
           required
         />
-        <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled"
+        <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn button-style" disabled="disabled"
                 onclick="showNext('reservation-info-form', 'customer-info-form')">
           Find a Table
         </button>
@@ -90,7 +96,7 @@
     <!-- Customer Info Form-->
     <div id="customer-info-form" class="customer-info-form-container hidden" aria-labelledby="customer-info-label">
       <div class="customer-info-form-wrapper">
-        <div id="customer-info-label"><h2>Complete your reservation</h2></div>
+        <div id="customer-info-label"><h2 class="label-style">Complete your reservation</h2></div>
         <form id="customer-form" method="post" autocomplete="off">
           <label for="firstName"></label>
           <input
@@ -99,6 +105,7 @@
             name="firstName"
             minlength="2"
             id="firstName"
+            class="input-style"
             placeholder="First name"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -110,6 +117,7 @@
             name="lastName"
             minlength="2"
             id="lastName"
+            class="input-style"
             placeholder="Last name"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -120,6 +128,7 @@
             type="number"
             name="phone"
             id="phone"
+            class="input-style"
             placeholder="Phone number"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -130,52 +139,52 @@
             type="email"
             name="email"
             id="email"
+            class="input-style"
             placeholder="Email"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
           >
-          <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn" disabled="disabled"
-                  onclick="showNext('customer-info-form', 'success-msg')">
-            Complete reservation
-          </button>
         </form>
+        <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn button-style" disabled="disabled" onclick="showNext('customer-info-form', 'success-msg')">
+          Complete reservation
+        </button>
       </div>
     </div>
 
     <!-- Success Message-->
     <div id="success-msg" class="success-msg-container hidden">
       <div class="success-msg-wrapper">
-        <h2>Success! Your reservation was completed.</h2>
+        <h2 class="label-style">Success! Your reservation was completed.</h2>
       </div>
     </div>
   </section>
 
   <section class="dining-at-aba-section-container">
     <!--Group Dining-->
-    <div id="group-dining" class="group-dining-container" aria-label="dining at aba">
-      <div class="aba-dining-dish">
+    <div id="group-dining" class="dining-content-container" aria-label="dining at aba">
+      <div class="aba-dining-dish-wrapper">
         <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
-      <article class="description-wrapper">
-        <h2 class="article-label">Group Dining At Aba</h2>
-        <p>
+      <article class="description-wrapper experiment-padding">
+        <h2 class="label-style">Group Dining At Aba</h2>
+        <p class="font-style-mont">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
         </p>
-        <button>Plan Your Party</button>
+        <button class="button-style">Plan Your Party</button>
       </article>
     </div>
     <!--Wine Dinner-->
-    <div class="wine-dinner-container">
-      <div class="aba-dining-dish-close">
-        <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
+    <div class="dining-content-container">
+      <div class="aba-dining-dish-wrapper">
+        <img src="./images/up-35-close.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
-      <article class="description-wrapper">
-        <h2 class="article-label">Wine Dinner</h2>
-        <p>
+      <article class="description-wrapper experiment-padding">
+        <h2 class="label-style">Wine Dinner</h2>
+        <p class="font-style-mont">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
           consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
@@ -183,21 +192,21 @@
           est laborum.
         </p>
         <div class="date-time">
-          <p>
+          <p class="font-style-mont">
             <time datetime="2018-06-13T19:00:00">June 13th, 2018 at 7pm</time>
           </p>
         </div>
-        <button class="learn-more">Learn More</button>
+        <button class="button-style">Learn More</button>
       </article>
     </div>
     <!--About Aba-->
-    <div class="about-aba-container">
-      <div class="aba-dining-dish">
+    <div id="about-aba" class="dining-content-container">
+      <div class="aba-dining-dish-wrapper">
         <img src="./images/up-42.jpg" alt="Create alt text">
       </div>
-      <article class="description-wrapper">
-        <h2 class="article-label">About Aba</h2>
-        <p>
+      <article class="description-wrapper experiment-padding">
+        <h2 class="label-style">About Aba</h2>
+        <p class="font-style-mont">
           Aba is a restaurant with a rooftop patio located in Chicago's historic Fulton Market District. This is Chef CJ
           Jacobson's second restaurant with Lettuce Entertain You, and is an extension of Ēma (mother in Hebrew) in
           River North. Aba, meaning father in Hebrew, will incorporate Ēma's style of cooking with a larger influence of
@@ -213,7 +222,7 @@
   <section aria-label="aba contact information" class="aba-information">
     <div class="aba-information-container">
       <article aria-label="hours of operation" class="hours-of-operation-wrapper">
-        <h3 class="hours-of-operation-label">Hours</h3>
+        <h4 class="hours-of-operation-label">HOURS</h4>
         <p>
           Tues - Thurs 12pm - 10pm
           <br>
@@ -223,9 +232,13 @@
           <br>
           Sun 10am - 9pm
         </p>
+        <div class="contact-links-wrapper">
+          <a href="#">CONTACT</a>
+          <a class="newsletter-label" href="#">NEWSLETTER</a>
+        </div>
       </article>
       <article class="location-info-wrapper">
-        <h3 class="location-info-label">Locations</h3>
+        <h4 class="location-info-label">LOCATIONS</h4>
         <a data-action="click on address" data-label="chicago" data-category="footer" class="store address"
            href="https://goo.gl/maps/yBnG7NBsnx4ns9vp7" target="_blank">
           302 N Green Street,
@@ -241,19 +254,16 @@
           773-645-1400
         </a>
       </article>
-      <div class="contact-links-wrapper">
-        <h3><a href="#">Contact</a></h3>
-        <h3><a href="#">Newsletter</a></h3>
-      </div>
+
     </div>
   </section>
-  <div class="legal-wrapper">
-    <a href="#">Frequent Diner</a>
-    <a href="#">Gift Cards</a>
-    <a href="#">Employment</a>
-    <a href="https://www.lettuce.com/" target="_blank" aria-label="lettuce entertain you enterprises web address">Leye.com</a>
-    <a href="#">Terms of Use</a>
-    <a href="#">Privacy Policy</a>
+  <div class="legal-wrapper label-style">
+    <a href="#">FREQUENT DINER</a>
+    <a href="#">GIFT CARDS</a>
+    <a href="#">EMPLOYMENT</a>
+    <a href="https://www.lettuce.com/" target="_blank" aria-label="lettuce entertain you enterprises web address">LEYE.COM</a>
+    <a href="#">TERMS OF USE</a>
+    <a href="#">PRIVACY POLICY</a>
   </div>
 </footer>
 </body>
