@@ -46,8 +46,9 @@
     </div>
   </section>
 
+<!--  Reservation forms-->
   <section class="reservation-form-container">
-    <div id="reservation-info-form" class="reservation-form-wrapper" aria-labelledby="reservation-form-label">
+    <div id="reservation-info-form" class="reservation-form-wrapper hidden" aria-labelledby="reservation-form-label">
       <div id="reservation-form-label"><h2 class="label-style">Make A Reservation</h2></div>
       <form id="reservation-form" aria-label="reservation form" method="post" autocomplete="off">
         <label for="res-date"></label>
@@ -56,6 +57,7 @@
           type="date"
           name="res-date"
           id="res-date"
+          class="input-lengthen"
           placeholder="current date"
           onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -66,6 +68,7 @@
           type="time"
           name="res-time"
           id="res-time"
+          class="input-lengthen"
           placeholder="current time"
           onclick="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -78,6 +81,7 @@
           max="9"
           name="res-party-size"
           id="res-party-size"
+          class="input-lengthen"
           placeholder=0
           onkeyup="validateForm('reservation-form', 'reservation-submit-btn')"
           required
@@ -90,7 +94,7 @@
     </div>
 
     <!-- Customer Info Form-->
-    <div id="customer-info-form" class="customer-info-form-container hidden" aria-labelledby="customer-info-label">
+    <div id="customer-info-form" class="customer-info-form-container " aria-labelledby="customer-info-label">
       <div class="customer-info-form-wrapper">
         <div id="customer-info-label"><h2 class="label-style">Complete your reservation</h2></div>
         <form id="customer-form" method="post" autocomplete="off">
@@ -101,6 +105,7 @@
             name="firstName"
             minlength="2"
             id="firstName"
+            class="input-lengthen"
             placeholder="First name"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -112,6 +117,7 @@
             name="lastName"
             minlength="2"
             id="lastName"
+            class="input-lengthen"
             placeholder="Last name"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -122,6 +128,7 @@
             type="number"
             name="phone"
             id="phone"
+            class="input-lengthen"
             placeholder="Phone number"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
@@ -132,6 +139,7 @@
             type="email"
             name="email"
             id="email"
+            class="input-lengthen"
             placeholder="Email"
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required

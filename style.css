@@ -3,6 +3,11 @@
   text-transform: uppercase;
 }
 
+.input-lengthen {
+  width: 18.58rem;
+  height: 1.75rem;
+  text-align: center;
+}
 
 /*--Desktops--*/
 @media only screen and (min-width: 1440px) {
@@ -101,6 +106,10 @@
     text-align: center;
     margin-top: 4.8rem;
     padding: 2.375rem 0;
+  }
+
+  #reservation-form {
+    font-size: 0;
   }
 
   /*--Dining at Aba--*/
