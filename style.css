@@ -126,6 +126,7 @@
     display: flex;
     justify-content: flex-end;/*make display: flex it's own class*/
     margin-bottom: auto;
+    margin-right: 10.375rem;
   }
 
   .aba-information-container {
