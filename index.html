@@ -82,7 +82,7 @@
           onkeyup="validateForm('reservation-form', 'reservation-submit-btn')"
           required
         />
-        <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn" disabled="disabled"
+        <button aria-label="submit" type="button" id="reservation-submit-btn" class="submit-btn button-style" disabled="disabled"
                 onclick="showNext('reservation-info-form', 'customer-info-form')">
           Find a Table
         </button>
@@ -136,7 +136,7 @@
             onkeyup="validateForm('customer-form', 'complete-res-btn')"
             required
           >
-          <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn" disabled="disabled"
+          <button aria-label="submit" type="button" id="complete-res-btn" class="submit-btn button-style" disabled="disabled"
                   onclick="showNext('customer-info-form', 'success-msg')">
             Complete reservation
           </button>
@@ -154,7 +154,7 @@
 
   <section class="dining-at-aba-section-container">
     <!--Group Dining-->
-    <div id="group-dining" class="group-dining-container" aria-label="dining at aba">
+    <div id="group-dining" class="dining-content-container" aria-label="dining at aba">
       <div class="aba-dining-dish-wrapper">
         <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
@@ -167,11 +167,11 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
         </p>
-        <button>Plan Your Party</button>
+        <button class="button-style">Plan Your Party</button>
       </article>
     </div>
     <!--Wine Dinner-->
-    <div class="wine-dinner-container">
+    <div class="dining-content-container">
       <div class="aba-dining-dish-wrapper">
         <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
@@ -189,11 +189,11 @@
             <time datetime="2018-06-13T19:00:00">June 13th, 2018 at 7pm</time>
           </p>
         </div>
-        <button class="learn-more">Learn More</button>
+        <button class="button-style">Learn More</button>
       </article>
     </div>
     <!--About Aba-->
-    <div class="about-aba-container">
+    <div id="about-aba" class="dining-content-container">
       <div class="aba-dining-dish-wrapper">
         <img src="./images/up-42.jpg" alt="Create alt text">
       </div>
