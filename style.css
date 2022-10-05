@@ -1,3 +1,4 @@
+body,
 .legal-wrapper,
 .header-container,
 .nav-content-container,
@@ -16,19 +17,6 @@ footer,
   display: flex;
 }
 
-.hidden {
-  display: none;
-}
-
-body {
-  background-image: url("./images/white-wood.jpeg");
-}
-
-body,
-.header-container {
-  display: flex;
-}
-
 body,
 footer,
 .header-container,
@@ -44,6 +32,10 @@ footer,
 #reservation-form-label,
 #customer-info-label {
   justify-content: center;
+}
+
+body {
+  background-image: url("./images/white-wood.jpeg");
 }
 
 .header-container {
@@ -258,6 +250,10 @@ footer {
 
 .hours-of-operation-wrapper {
   width: 100%;
+}
+
+.hours-of-operation-wrapper h2 {
+  font-size: 1.125rem;
 }
 
 .hours-of-operation-wrapper p {
@@ -488,11 +484,15 @@ footer {
     width: auto;
   }
 
-  .hours-of-operation-wrapper h4,
-  .location-info-wrapper h4 {
+  .hours-of-operation-wrapper h2,
+  .location-info-wrapper h3 {
     margin-bottom: 0;
     font-family: 'Playfair Display', serif;
     letter-spacing: 0.125rem;
+  }
+
+  .hours-of-operation-wrapper h2 {
+    font-size: 1.125rem;
   }
 
   .hours-of-operation-wrapper p {
@@ -537,4 +537,23 @@ footer {
     padding-left: 18px;
     padding-right: 18px
   }
+}
+
+
+/*--Custom classes--*/
+.wdn-text-hidden {
+  font-size: 0;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  position: absolute!important;
+  border: 0!important;
+  padding: 0!important;
+  margin: 0!important;
+  clip: rect(1px,1px,1px,1px);
+}
+
+.hidden {
+  display: none;
 }
