@@ -463,13 +463,13 @@ footer {
   }
 
   footer a {
-    text-decoration: none; /*make text-decoration: none it's own class*/
+    text-decoration: none;
     color: white;
   }
 
   .aba-information {
     display: flex;
-    justify-content: flex-end; /*make display: flex it's own class*/
+    justify-content: flex-end;
     margin: auto 0;
   }
 
@@ -531,3 +531,10 @@ footer {
   }
 }
 
+/*===========================Tablet VIEWPOINT==*/
+@media only screen and (max-width: 1412px) {
+  #nav-menu a {
+    padding-left: 18px;
+    padding-right: 18px
+  }
+}
