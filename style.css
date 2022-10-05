@@ -1,19 +1,3 @@
-.label-style {
-  font-family: 'Playfair Display', serif;
-  text-transform: uppercase;
-}
-
-.input-style {
-  width: 18.58rem;
-  height: 1.75rem;
-  text-align: center;
-  font-family: Montserrat, sans-serif;
-}
-
-.font-style-mont {
-  font-family: Montserrat, sans-serif;
-}
-
 .legal-wrapper,
 .header-container,
 .nav-content-container,
@@ -32,41 +16,8 @@ footer,
   display: flex;
 }
 
-.image-fit {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.border-display {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-}
-
-/* Party size input field */
-/* Chrome */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 .hidden {
   display: none;
-}
-.button-style {
-  border: none;
-  background-color: navy;
-  color: white;
-  padding: 0.5rem 5.875rem;
-  font-family: "Playfair Display", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.125rem;
 }
 
 body {
@@ -161,9 +112,12 @@ footer,
 }
 
 /*--Hero Section--*/
-.image-wrapper-one {
+.hero-images-container {
   display: none;
 }
+/*.image-wrapper-one {*/
+/*  display: none;*/
+/*}*/
 
 /*--Form Section--*/
 .reservation-form-container,
@@ -175,8 +129,56 @@ footer,
   height: 15rem;
 }
 
+
+.label-style {
+  font-family: 'Playfair Display', serif;
+  text-transform: uppercase;
+}
+
 .input-style {
+  width: 18.58rem;
+  height: 1.75rem;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
   margin-bottom: 1.75rem;
+}
+
+.font-style-mont {
+  font-family: Montserrat, sans-serif;
+}
+
+.image-fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.border-display {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+/* Party size input field */
+/* Chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.button-style {
+  border: none;
+  background-color: navy;
+  color: white;
+  padding: 0.5rem 5.875rem;
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
 }
 
 #customer-form {
@@ -209,7 +211,7 @@ footer,
 footer {
   align-items: center;
   background-size: 121.125rem;
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/Aba-wood-1.jpg");
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Aba-wood-1.jpg");
   color: white;
 }
 
@@ -294,7 +296,7 @@ footer {
     text-decoration: none;
   }
 
-  .nav-menu {               /*topnav*/
+  .nav-menu { /*topnav*/
     height: 3.125rem;
     width: 100%;
     justify-content: space-evenly;
@@ -309,6 +311,7 @@ footer {
 
   /*--Hero--*/
   .hero-images-container {
+    display: inline-flex;
     flex-direction: row;
     height: 54.125rem;
     margin-top: 4.875rem;
