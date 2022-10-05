@@ -341,12 +341,9 @@ footer {
 
   #reservation-form,
   #customer-form {
-    font-size: 0;
-  }
-
-  #reservation-form {
     flex-direction: row;
     height: auto;
+    font-size: 0;
   }
 
   .button-style {
@@ -359,6 +356,11 @@ footer {
 
   #complete-res-btn {
     margin-top: 1.5rem;
+    padding: 0.5rem 5.875rem;
+  }
+
+  #success-msg-txt {
+    letter-spacing: 0.125rem;
   }
 
   /*--Dining at Aba--*/
