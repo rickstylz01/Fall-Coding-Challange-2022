@@ -27,7 +27,8 @@ footer,
 .aba-information-container,
 .contact-links-wrapper,
 #reservation-form,
-#reservation-form-label {
+#reservation-form-label,
+#customer-info-label {
   display: flex;
 }
 
@@ -58,6 +59,16 @@ input[type="number"] {
 .hidden {
   display: none;
 }
+.button-style {
+  border: none;
+  background-color: navy;
+  color: white;
+  padding: 0.5rem 5.875rem;
+  font-family: "Playfair Display", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem;
+}
+
 
 /*--Desktops--*/
 @media only screen and (min-width: 1440px) {
@@ -184,17 +195,6 @@ input[type="number"] {
     object-fit: cover;
   }
 
-  /*--Button--*/
-  .button-style {
-    border: none;
-    background-color: navy;
-    color: white;
-    padding: 0.5rem 5.875rem;
-    font-family: "Playfair Display", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.125rem;
-  }
-
   /*--About Aba--*/
   .about-aba-container {
     flex-direction: row-reverse
@@ -287,7 +287,8 @@ input[type="number"] {
   .nav-content-container,
   .nav-menu,
   .reservation-form-container,
-  #reservation-form-label {
+  #reservation-form-label,
+  #customer-info-label {
     justify-content: center;
   }
 
@@ -361,7 +362,8 @@ input[type="number"] {
   }
 
   /*--Form Section--*/
-  .reservation-form-container {
+  .reservation-form-container,
+  .customer-info-form-container {
     padding: 18px 0;
   }
 
@@ -371,6 +373,21 @@ input[type="number"] {
 
   .input-style {
     margin-bottom: 1.75rem;
-
   }
+
+  #customer-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .success-msg-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8.75rem;
+  }
+
+  /*.aba-dining-dish-wrapper {*/
+  /*  height: 21.875rem;*/
+  /*}*/
 }
