@@ -346,10 +346,6 @@ footer {
     font-size: 0;
   }
 
-  .button-style {
-    padding: 0 6.75rem;
-  }
-
   .input-style {
     margin-bottom: auto;
   }
@@ -385,19 +381,35 @@ footer {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-align: center;
-    height: 16.125rem;
+    height: 15rem;
   }
 
   /*--Description Img's--*/
   .aba-dining-dish-wrapper {
-    height: 29.875rem;
-    width: 78.875rem;
+    height: 24.875rem;
+    width: 102.875rem;
   }
 
   .aba-dining-dish-wrapper img { /*add to other img wrapper class*/
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .button-style {
+    padding: 0.5rem 5.875rem;
+  }
+
+  #grp-dining-btn {
+    margin-top: 0.875rem;
+  }
+
+  .aba-dining-description {
+    font-size: 1rem;
+  }
+
+  #wine-dining {
+    flex-direction: row;
   }
 
   /*--About Aba--*/
