@@ -285,7 +285,6 @@ footer {
   .nav-content-container {
     align-items: center;
     justify-content: center;
-    /*width: 75.5rem;*/
     padding-left: 3rem;
   }
 
@@ -309,11 +308,13 @@ footer {
 
   /*--Hero--*/
   .hero-images-container {
+    flex-direction: row;
     height: 54.125rem;
     margin-top: 4.875rem;
   }
 
   .image-wrapper-one {
+    display: inline-block;
     margin-right: 1.44rem;
   }
 
@@ -341,6 +342,19 @@ footer {
   #reservation-form,
   #customer-form {
     font-size: 0;
+  }
+
+  #reservation-form {
+    flex-direction: row;
+    height: auto;
+  }
+
+  .button-style {
+    padding: 0 6.75rem;
+  }
+
+  .input-style {
+    margin-bottom: auto;
   }
 
   #complete-res-btn {
