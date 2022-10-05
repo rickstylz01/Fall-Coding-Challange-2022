@@ -56,7 +56,7 @@ footer,
 }
 
 .nav-content-container {
-  padding: 2rem 0;
+  padding-top: 2rem;
   width: 100%;
 }
 
@@ -112,12 +112,9 @@ footer,
 }
 
 /*--Hero Section--*/
-.hero-images-container {
+.image-wrapper-one {
   display: none;
 }
-/*.image-wrapper-one {*/
-/*  display: none;*/
-/*}*/
 
 /*--Form Section--*/
 .reservation-form-container,
@@ -198,9 +195,28 @@ input[type="number"] {
   height: 21.875rem;
 }
 
+.aba-dining-dish-wrapper {
+  display: none;
+}
+
 .description-wrapper {
   padding: 2.75rem;
   text-align: center;
+}
+
+#grp-dining-article {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/up-35.jpg");
+  background-size: cover;
+  color: white;
+  font-size: 18px;
+}
+
+#about-aba-article {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("./images/up-42.jpg");
+  background-position-x: center;
+  background-size: cover;
+  color: white;
+  font-size: 18px;
 }
 
 #grp-dining-btn {
@@ -211,8 +227,7 @@ input[type="number"] {
 footer {
   align-items: center;
   background-size: 121.125rem;
-  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Aba-wood-1.jpg");
-  color: white;
+  color: black;
 }
 
 .aba-information {
@@ -232,7 +247,7 @@ footer {
 .aba-information-container a,
 .legal-wrapper a {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .hours-of-operation-label,
@@ -364,7 +379,7 @@ footer {
   }
 
   /*--Dining at Aba--*/
-  .experiment-padding {
+  .article-padding {
     padding: 1.375rem 5.875rem;
   }
 
@@ -392,10 +407,16 @@ footer {
     letter-spacing: 0.125rem;
   }
 
+  #grp-dining-article {
+    background-image: none;
+    color: black;
+  }
+
   /*--Description Img's--*/
   .aba-dining-dish-wrapper {
     height: 30.875rem;
     width: 180.875rem;
+    display: inline;
   }
 
   .aba-dining-dish-wrapper img {
@@ -412,10 +433,6 @@ footer {
     margin-top: 0.875rem;
   }
 
-  .aba-dining-description {
-    font-size: 1.25rem;
-  }
-
   #wine-dining {
     flex-direction: row;
     margin: 3.625rem 0;
@@ -423,7 +440,16 @@ footer {
 
   /*--About Aba--*/
   .about-aba-container {
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
+  }
+
+  #about-aba-article {
+    background-image: none;
+    color: black;
+  }
+
+  .aba-dining-description {
+    font-size: 1.25rem;
   }
 
   /*--Footer--*/
@@ -431,7 +457,9 @@ footer {
     height: 31.8rem;
     width: 100%;
     flex-direction: column;
-    margin-top: 6.875rem
+    margin-top: 6.875rem;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/Aba-wood-1.jpg");
+    color: white;
   }
 
   footer a {
@@ -453,6 +481,7 @@ footer {
     align-items: start;
     gap: 6.125rem;
     margin-right: 10.875rem;
+    color: white;
   }
 
   .hours-of-operation-wrapper {
@@ -477,6 +506,7 @@ footer {
 
   .contact-links-wrapper a {
     font-weight: bold;
+    color: white;
   }
 
   .newsletter-label {
@@ -485,6 +515,7 @@ footer {
 
   .location-info-wrapper a {
     font-family: 'Montserrat', sans-serif;
+    color: white;
   }
 
   .legal-wrapper {
@@ -493,6 +524,10 @@ footer {
     justify-content: center;
     margin-bottom: 0.5rem;
     font-family: 'Playfair Display', sans-serif;
+  }
+
+  .legal-wrapper a {
+    color: white;
   }
 }
 
