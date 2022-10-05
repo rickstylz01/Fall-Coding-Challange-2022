@@ -73,10 +73,6 @@ body {
   background-image: url("./images/white-wood.jpeg");
 }
 
-
-
-
-
 body,
 .header-container {
   display: flex;
@@ -270,7 +266,7 @@ footer {
   padding: 10px;
 }
 
-/*--Desktops--*/
+/*===========================Desktops VIEWPOINT==*/
 @media only screen and (min-width: 1440px) {
   /*--Header--*/
   main,
@@ -279,13 +275,9 @@ footer {
   }
 
   .header-container {
+    flex-direction: row;
     justify-content: center;
     margin-top: 3.375rem;
-  }
-
-  .logo-wrapper {
-    height: 12.5rem;
-    width: 13.7rem;
   }
 
   /*--Navigation--*/
