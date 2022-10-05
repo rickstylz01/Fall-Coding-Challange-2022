@@ -69,13 +69,17 @@ input[type="number"] {
   letter-spacing: 0.125rem;
 }
 
+body {
+  background-image: url("./images/white-wood.jpeg");
+}
+
+footer {
+  background-image: url("./images/Aba-wood-1.jpg");
+  color: white;
+}
 
 /*--Desktops--*/
 @media only screen and (min-width: 1440px) {
-  body {
-    background-image: url("./images/white-wood.jpeg");
-  }
-
   /*--Header--*/
   main,
   .header-container {
@@ -202,12 +206,11 @@ input[type="number"] {
 
   /*--Footer--*/
   footer {
-    background-image: url("./images/Aba-wood-1.jpg");
     height: 31.8rem;
     width: 100%;
-    color: white;
     flex-direction: column;
-    margin-top: 6.875rem  }
+    margin-top: 6.875rem
+  }
 
   footer a {
     text-decoration: none; /*make text-decoration: none it's own class*/
@@ -268,6 +271,13 @@ input[type="number"] {
   }
 }
 
+
+
+
+
+
+
+/*---Mobile---*/
 @media only screen and (max-width: 600px) {
   body,
   .header-container {
@@ -387,7 +397,24 @@ input[type="number"] {
     padding: 0 8.75rem;
   }
 
-  /*.aba-dining-dish-wrapper {*/
-  /*  height: 21.875rem;*/
-  /*}*/
+  /*--Aba Dining Section--*/
+  .aba-dining-dish-wrapper {
+    height: 21.875rem;
+  }
+
+  .description-wrapper {
+    padding: 2.75rem;
+    text-align: center;
+  }
+
+  #grp-dining-btn {
+    font-size: 0.75rem;
+  }
+
+  /*--Footer Section--*/
+  .aba-information-container {
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+  }
 }
