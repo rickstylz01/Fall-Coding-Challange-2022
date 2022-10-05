@@ -24,13 +24,13 @@
   <!--    Navigation-->
   <nav id="myTopNav" class="nav-content-container">
     <div  id="nav-menu" class="nav-menu border-display">
-      <a href="#reservation-info-form">RESERVE</a>
+      <a href="#reservation-info-form" class="res-nav-link">RESERVE</a>
       <a href="#">MENU</a>
       <a href="#">GROUP DINING</a>
       <a href="#">EVENTS</a>
       <a href="#">TEAM</a>
       <a href="javascript:void(0);" class="icon hidden" onclick="toggleResponseClass()">
-        <i class="fa fa-bars"></i>
+        <i class="fa fa-bars pad-left"></i>
       </a>
     </div>
   </nav>
@@ -47,7 +47,7 @@
   </section>
 
 <!--  Reservation forms-->
-  <section class="reservation-form-container border-display">
+  <section class="reservation-form-container border-display ">
     <div id="reservation-info-form" class="reservation-form-wrapper" aria-labelledby="reservation-form-label">
       <div id="reservation-form-label"><h2 class="label-style">Make A Reservation</h2></div>
       <form id="reservation-form" aria-label="reservation form" method="post" autocomplete="off">
@@ -97,7 +97,7 @@
     <div id="customer-info-form" class="customer-info-form-container hidden" aria-labelledby="customer-info-label">
       <div class="customer-info-form-wrapper">
         <div id="customer-info-label"><h2 class="label-style">Complete your reservation</h2></div>
-        <form id="customer-form" method="post" autocomplete="off">
+        <form id="customer-form" method="post" autocomplete="off" >
           <label for="firstName"></label>
           <input
             aria-label="your first name"
@@ -163,7 +163,7 @@
     <!--Group Dining-->
     <div id="group-dining" class="dining-content-container" aria-label="dining at aba">
       <div class="aba-dining-dish-wrapper">
-        <img src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
+        <img class="image-fit" src="./images/up-35.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
       <article class="description-wrapper experiment-padding">
         <h2 class="label-style">Group Dining At Aba</h2>
@@ -174,13 +174,13 @@
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
           est laborum.
         </p>
-        <button class="button-style">Plan Your Party</button>
+        <button id="grp-dining-btn" class="button-style">Plan Your Party</button>
       </article>
     </div>
     <!--Wine Dinner-->
     <div class="dining-content-container">
       <div class="aba-dining-dish-wrapper">
-        <img src="./images/up-35-close.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
+        <img class="image-fit" src="./images/up-35-close.jpg" alt="A hummus dish in a round black bowl decorated with a floral garnish.">
       </div>
       <article class="description-wrapper experiment-padding">
         <h2 class="label-style">Wine Dinner</h2>
@@ -202,7 +202,7 @@
     <!--About Aba-->
     <div id="about-aba" class="dining-content-container">
       <div class="aba-dining-dish-wrapper">
-        <img src="./images/up-42.jpg" alt="Create alt text">
+        <img class="image-fit" src="./images/up-42.jpg" alt="Create alt text">
       </div>
       <article class="description-wrapper experiment-padding">
         <h2 class="label-style">About Aba</h2>
@@ -233,7 +233,7 @@
           Sun 10am - 9pm
         </p>
         <div class="contact-links-wrapper">
-          <a href="#">CONTACT</a>
+          <a href="#" class="contact-label">CONTACT</a>
           <a class="newsletter-label" href="#">NEWSLETTER</a>
         </div>
       </article>
