@@ -270,8 +270,7 @@ footer {
 /*===========================Desktops VIEWPOINT==*/
 @media only screen and (min-width: 1440px) {
   /*--Header--*/
-  main,
-  .header-container {
+  main {
     padding: 0 4rem;
   }
 
@@ -279,6 +278,7 @@ footer {
     flex-direction: row;
     justify-content: center;
     margin-top: 3.375rem;
+    padding: 0 8rem;
   }
 
   /*--Navigation--*/
@@ -381,13 +381,17 @@ footer {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     text-align: center;
-    height: 15rem;
+    height: 20rem;
+  }
+
+  .aba-dining-label {
+    letter-spacing: 0.125rem;
   }
 
   /*--Description Img's--*/
   .aba-dining-dish-wrapper {
-    height: 24.875rem;
-    width: 102.875rem;
+    height: 30.875rem;
+    width: 180.875rem;
   }
 
   .aba-dining-dish-wrapper img { /*add to other img wrapper class*/
@@ -405,7 +409,8 @@ footer {
   }
 
   .aba-dining-description {
-    font-size: 1rem;
+    font-size: 1.25rem;
+
   }
 
   #wine-dining {
