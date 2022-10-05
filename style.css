@@ -289,7 +289,6 @@ footer {
   footer,
   .header-container,
   .dining-content-container,
-  .legal-wrapper,
   #reservation-form {
     flex-direction: column;
   }
@@ -423,8 +422,54 @@ footer {
   }
 
   .aba-information-container {
+    width: 100%;
     height: 24rem;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+
+  .aba-information-container a,
+  .legal-wrapper a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .hours-of-operation-label,
+  .location-info-label {
+    margin-bottom: 0;
+    letter-spacing: 0.187rem;
+  }
+
+  .hours-of-operation-wrapper {
+    width: 100%;
+  }
+
+  .hours-of-operation-wrapper p {
+    margin-top: 0;
+  }
+
+  .contact-links-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-label {
+    padding-bottom: 0.875rem;
+  }
+
+  .legal-wrapper {
+    border: 1px solid orangered;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: stretch;
+    align-items: center;
+  }
+
+  .legal-wrapper a {
+    padding: 10px;
+  }
+
 }
